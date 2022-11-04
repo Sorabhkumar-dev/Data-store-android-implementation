@@ -47,6 +47,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:text="@string/start_your_cashless_journey_now"
             android:textColor="@color/orange_700"
             android:textStyle="italic"
@@ -66,7 +67,6 @@
             app:errorEnabled="true"
             app:errorIconDrawable="@drawable/ic_error"
             app:errorIconTint="?colorError"
-            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             app:layout_constraintEnd_toEndOf="@id/guide_end"
             app:layout_constraintStart_toStartOf="@id/guide_start"
             app:layout_constraintTop_toBottomOf="@id/txv_start_your"
@@ -221,11 +221,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_next"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="56dp"
+            android:layout_marginBottom="300dp"
             android:text="@string/next"
             android:textColor="@color/white"
             android:textStyle="italic"
