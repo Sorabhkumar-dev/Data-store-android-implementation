@@ -1,13 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sorabh.datastore.ui.fragment.HomeFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_onboarding2" />
+        android:id="@+id/img_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/profile_background"
+        android:padding="15dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/truly_background"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"
+        android:text="@string/powered_by_truly"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="?colorPrimary"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_logo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/img_logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        tools:text="Sorabh kumar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="@id/txv_name"
+        app:layout_constraintTop_toBottomOf="@id/txv_name"
+        tools:text="kumardeveloper@gmail.com" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/txv_email"
+        app:layout_constraintTop_toBottomOf="@id/txv_email"
+        tools:text="kumar@Official" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/txv_user_id"
+        app:layout_constraintTop_toBottomOf="@id/txv_user_id"
+        tools:text="Saharanpur" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_address" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_wallet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/wallet"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_pay"
+        app:layout_constraintStart_toStartOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pay"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pay"
+        android:textStyle="italic"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/btn_wallet"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

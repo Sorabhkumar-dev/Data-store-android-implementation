@@ -10,8 +10,11 @@
     <string name="sign_up">SignUp</string>
     <string name="or">OR</string>
     <string name="login">Login</string>
+    <string name="wallet">Wallet</string>
+    <string name="pay">Pay</string>
     <string name="loading">Loading…</string>
-    <string name="please_fill_all_the_fields">Please fill all the fields!</string>
+    <string name="powered_by_truly">Powered by Truly!</string>
+    <string name="please_fill_all_the_fields">Please fill all the fields</string>
     <string name="pay_with_faster_finance_and_get_exclusive_cashback_and_rewards_point">Pay with faster finance ang get exclusive cashback and rewards points.</string>
     <string name="welcome_to_faster_financial_service">Welcome to faster financial service!</string>
     <string name="start_your_cashless_journey_now">Start your cashless journey now with \n Faster financial Service</string>
