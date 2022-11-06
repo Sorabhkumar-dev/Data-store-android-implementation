@@ -1,16 +1,19 @@
 package com.sorabh.datastore.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.sorabh.datastore.databinding.FragmentHomeBinding
+import com.sorabh.datastore.ui.viewmodel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import com.sorabh.datastore.ui.viewmodel.HomeViewModel
 
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
@@ -23,14 +26,38 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater)
-        lifecycleScope.launch{ setupData() }
+        setupData()
         return binding.root
     }
 
-    private suspend fun setupData() {
-        viewModel.nameFlow.collect { binding.txvName.text = it }
-        viewModel.emailFlow.collect { binding.txvEmail.text = it }
-        viewModel.userIdFlow.collect { binding.txvUserId.text = it }
-        viewModel.addressFlow.collect { binding.txvAddress.text = it }
+    private  fun setupData() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.RESUMED) {
+                launch {
+                viewModel.nameFlow.collect {
+                    binding.txvName.text = it
+                    Log.d("USER_DATA", it)
+                }
+                }
+                launch {
+                    viewModel.emailFlow.collect {
+                        binding.txvEmail.text = it
+                        Log.d("USER_DATA", it)
+                    }
+                }
+                launch {
+                    viewModel.userIdFlow.collect {
+                        binding.txvUserId.text = it
+                        Log.d("USER_DATA", it)
+                    }
+                }
+                launch {
+                    viewModel.addressFlow.collect {
+                        binding.txvAddress.text = it
+                        Log.d("USER_DATA", it)
+                    }
+                }
+            }
+        }
     }
 }
