@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Data Store Impl</string>
+    <string name="app_name">Faster Finance</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
@@ -8,6 +8,12 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="address">Address</string>
     <string name="next">Next</string>
+    <string name="or">OR</string>
+    <string name="login">Login</string>
+    <string name="loading">Loading…</string>
+    <string name="pay_with_faster_finance_and_get_exclusive_cashback_and_rewards_point">Pay with faster finance ang get exclusive cashback and rewards points.</string>
     <string name="welcome_to_faster_financial_service">Welcome to faster financial service!</string>
     <string name="start_your_cashless_journey_now">Start your cashless journey now with \n Faster financial Service</string>
+    <string name="count">%d%%</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
