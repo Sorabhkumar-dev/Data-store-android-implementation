@@ -220,12 +220,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_sign_up"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="300dp"
-            android:text="@string/next"
+            android:text="@string/sign_up"
             android:textColor="@color/white"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
