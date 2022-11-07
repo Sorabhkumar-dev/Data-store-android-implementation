@@ -9,6 +9,7 @@
     <string name="address">Address</string>
     <string name="sign_up">SignUp</string>
     <string name="or">OR</string>
+    <string name="ok">OK</string>
     <string name="login">Login</string>
     <string name="account">Account</string>
     <string name="account_holder">Account holder</string>
@@ -31,4 +32,8 @@
     <string name="send_money_from_your_account">Send money from your account</string>
     <string name="receiver_name">Receiver name</string>
     <string name="amount">Amount</string>
+    <string name="message">Message</string>
+    <string name="send_money">Send Money</string>
+    <string name="send_money_to">Send money to %s.</string>
+    <string name="payment_successfully_completed_to">Payment successfully completed to %s.</string>
 </resources>
