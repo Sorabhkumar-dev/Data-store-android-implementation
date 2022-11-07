@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sorabh.datastore.ui.fragment.AccountFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/guide_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_bank"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/truly_background"
+        android:padding="16dp"
+        android:src="@drawable/ic_bank"
+        android:tint="@color/amber_dark"
+        app:layout_constraintStart_toStartOf="@id/guide_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_account_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textStyle="italic"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toEndOf="@id/img_bank"
+        app:layout_constraintTop_toTopOf="@id/img_bank"
+        tools:text="Sorabh kumar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_account_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toStartOf="@id/txv_account_holder"
+        app:layout_constraintTop_toBottomOf="@id/txv_account_holder"
+        tools:text="123456789" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_ifsc_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toStartOf="@id/txv_account_no"
+        app:layout_constraintTop_toBottomOf="@id/txv_account_no"
+        tools:text="UCBA000080" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_branch_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toStartOf="@id/txv_ifsc_code"
+        app:layout_constraintTop_toBottomOf="@id/txv_ifsc_code"
+        tools:text="saharanpur" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_wallet"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/amber_light"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textStyle="italic"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="@id/txv_branch_name"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        tools:text="3000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_money"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_add"
+        android:drawableTint="@color/white"
+        android:text="@string/add_money"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toStartOf="@id/guide_start"
+        app:layout_constraintTop_toBottomOf="@id/txv_branch_name" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txv_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/faster_financial_services"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/amber_dark"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_money" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
