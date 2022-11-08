@@ -46,7 +46,7 @@ class AccountDataStoreImpl @Inject constructor(
         }
     }
 
-    override val raedAccountFlow: Flow<Account>
+    override val readAccountFlow: Flow<Account>
         get() = context.accountData.data.catch { exception ->
             if (exception is IOException) {
                 Log.e(Constant.TAG, "Error reading sort order preferences.", exception)

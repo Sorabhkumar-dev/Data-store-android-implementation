@@ -15,5 +15,5 @@ interface AccountDataStore {
         accountBalance: Long
     )
 
-    val raedAccountFlow : Flow<Account>
+    val readAccountFlow : Flow<Account>
 }
