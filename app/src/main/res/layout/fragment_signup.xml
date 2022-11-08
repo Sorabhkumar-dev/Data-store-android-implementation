@@ -57,7 +57,7 @@
             app:layout_constraintTop_toBottomOf="@id/txv_welcome" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txv_name_layout"
+            android:id="@+id/edt_name_layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             app:startIconDrawable="@drawable/ic_edit">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txv_name"
+                android:id="@+id/edt_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"/>
@@ -92,7 +92,7 @@
             app:errorIconTint="?colorError"
             app:layout_constraintEnd_toEndOf="@id/guide_end"
             app:layout_constraintStart_toStartOf="@id/guide_start"
-            app:layout_constraintTop_toBottomOf="@id/txv_name_layout"
+            app:layout_constraintTop_toBottomOf="@id/edt_name_layout"
             app:startIconDrawable="@drawable/ic_email">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -126,7 +126,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txv_user_name_layout"
+            android:id="@+id/edt_user_name_layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
             app:startIconDrawable="@drawable/ic_user">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txv_user_name"
+                android:id="@+id/edt_user_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"/>
@@ -161,18 +161,18 @@
             app:errorIconTint="?colorError"
             app:layout_constraintEnd_toEndOf="@id/guide_end"
             app:layout_constraintStart_toStartOf="@id/guide_start"
-            app:layout_constraintTop_toBottomOf="@id/txv_user_name_layout"
+            app:layout_constraintTop_toBottomOf="@id/edt_user_name_layout"
             app:startIconDrawable="@drawable/ic_location">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txv_address"
+                android:id="@+id/edt_address"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPostalAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txv_password_layout"
+            android:id="@+id/edt_password_layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -189,14 +189,14 @@
             app:startIconDrawable="@drawable/ic_lock">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txv_password"
+                android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txv_confirm_password_layout"
+            android:id="@+id/edt_confirm_password_layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -209,11 +209,11 @@
             app:passwordToggleEnabled="true"
             app:layout_constraintEnd_toEndOf="@id/guide_end"
             app:layout_constraintStart_toStartOf="@id/guide_start"
-            app:layout_constraintTop_toBottomOf="@id/txv_password_layout"
+            app:layout_constraintTop_toBottomOf="@id/edt_password_layout"
             app:startIconDrawable="@drawable/ic_lock">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txv_confirm_password"
+                android:id="@+id/edt_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"/>
@@ -231,7 +231,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/guide_end"
             app:layout_constraintStart_toStartOf="@id/guide_start"
-            app:layout_constraintTop_toBottomOf="@id/txv_confirm_password_layout" />
+            app:layout_constraintTop_toBottomOf="@id/edt_confirm_password_layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

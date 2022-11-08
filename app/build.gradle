@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.protobuf' version '0.8.17'
+
 
 }
 
@@ -58,11 +60,29 @@ dependencies {
 
     //datastore preference
     implementation("androidx.datastore:datastore-preferences:$datastore_version")
+
     //proto datastore
     implementation("androidx.datastore:datastore:$datastore_version")
+    implementation  "com.google.protobuf:protobuf-javalite:3.18.0"
+
 
 }
 kapt {
     correctErrorTypes = true
+}
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.14.0"
+    }
+
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java {
+                    option 'lite'
+                }
+            }
+        }
+    }
 }
 

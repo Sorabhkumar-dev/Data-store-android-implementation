@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.sorabh.datastore.proto";
+option java_multiple_files = true;
+
+message Account{
+  string bankName = 1;
+  int64 accountNo = 2;
+  string accountHolder = 3;
+  int64 phoneNo = 4;
+  string emailId = 5;
+  string ifscCode = 6;
+  string branchName = 7;
+  int64 accountBalance = 8;
+}
