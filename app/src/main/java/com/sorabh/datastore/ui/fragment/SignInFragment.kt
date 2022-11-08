@@ -35,9 +35,9 @@ class SignInFragment : Fragment() {
     }
 
     private suspend fun signIn() {
-            val email = binding.txvEmail.text.toString()
-            val phone = binding.txvPhone.text.toString()
-            val password = binding.txvPassword.text.toString()
+            val email = binding.edtEmail.text.toString()
+            val phone = binding.edtPhone.text.toString()
+            val password = binding.edtPassword.text.toString()
             if (email == viewModel.emailFlow.last() || phone == viewModel.phoneFlow.last() && password == viewModel.passwordFlow.last()) {
                 navController.navigate(SignInFragmentDirections.actionSignInFragmentToHomeFragment())
             }

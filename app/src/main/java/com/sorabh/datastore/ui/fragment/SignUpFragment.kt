@@ -36,13 +36,13 @@ class SignUpFragment : Fragment() {
     }
 
     private suspend fun signUp() {
-        val name = binding.txvName.text.toString()
-        val email = binding.txvEmail.text.toString()
-        val phone = binding.txvPhone.text.toString()
-        val userName = binding.txvUserName.text.toString()
-        val address = binding.txvAddress.text.toString()
-        val password = binding.txvPassword.text.toString()
-        val confirmPassword = binding.txvConfirmPassword.text.toString()
+        val name = binding.edtName.text.toString()
+        val email = binding.edtEmail.text.toString()
+        val phone = binding.edtPhone.text.toString()
+        val userName = binding.edtUserName.text.toString()
+        val address = binding.edtAddress.text.toString()
+        val password = binding.edtPassword.text.toString()
+        val confirmPassword = binding.edtConfirmPassword.text.toString()
         if (name.isNotEmpty() && email.isNotEmpty() && phone.length == 10 && userName.isNotEmpty()
             && address.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()
             && password == confirmPassword
