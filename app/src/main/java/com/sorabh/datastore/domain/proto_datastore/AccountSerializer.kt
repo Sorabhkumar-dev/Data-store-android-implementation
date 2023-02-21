@@ -1,9 +1,9 @@
 package com.sorabh.datastore.domain.proto_datastore
 
+import android.accounts.Account
 import androidx.datastore.core.CorruptionException
 import androidx.datastore.core.Serializer
 import androidx.datastore.preferences.protobuf.InvalidProtocolBufferException
-import com.sorabh.datastore.proto.Account
 import java.io.InputStream
 import java.io.OutputStream
 

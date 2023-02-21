@@ -1,12 +1,12 @@
 package com.sorabh.datastore.domain.datastore
 
+import android.accounts.Account
 import android.content.Context
 import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.core.Serializer
 import androidx.datastore.dataStore
 import com.sorabh.datastore.domain.utils.Constant
-import com.sorabh.datastore.proto.Account
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import java.io.IOException
